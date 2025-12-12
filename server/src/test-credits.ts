@@ -3,10 +3,10 @@
 // Usage: npx tsx test-credits.ts YOUR_USER_ID
 
 import mongoose from "mongoose";
-import { ENV } from "./lib/ENV.ts";
-import { addCredits } from "./lib/credits.ts";
-import UserModel from "./models/UserModel.ts";
-import CreditTxnModel from "./models/CreditTxnModel.ts";
+import { ENV } from "./lib/ENV.js";
+import { addCredits } from "./lib/credits.js";
+import UserModel from "./models/UserModel.js";
+import CreditTxnModel from "./models/CreditTxnModel.js";
 
 const testCredits = async (userId: string) => {
   try {

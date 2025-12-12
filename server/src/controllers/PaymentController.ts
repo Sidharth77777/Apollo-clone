@@ -1,10 +1,10 @@
 import { type Request, type Response } from "express";
-import { stripe } from "../config/stripeConfig.ts";
-import { ENV } from "../lib/ENV.ts";
-import { addCredits } from "../lib/credits.ts";
-import UserModel from "../models/UserModel.ts";
+import { stripe } from "../config/stripeConfig.js";
+import { ENV } from "../lib/ENV.js";
+import { addCredits } from "../lib/credits.js";
+import UserModel from "../models/UserModel.js";
 import type Stripe from "stripe";
-import CreditTxnModel from "../models/CreditTxnModel.ts";
+import CreditTxnModel from "../models/CreditTxnModel.js";
 import mongoose from "mongoose";
 
 /**

@@ -1,6 +1,6 @@
-import UserModel from "../models/UserModel.ts";
-import CreditTxnModel from "../models/CreditTxnModel.ts";
-import type { UserDoc } from "../models/UserModel.ts";
+import UserModel from "../models/UserModel.js";
+import CreditTxnModel from "../models/CreditTxnModel.js";
+import type { UserDoc } from "../models/UserModel.js";
 
 /**
  * Add credits to a user and create a transaction record

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { track, getTraffic, getSummary, getDevices } from "../controllers/AnalyticsController.ts";
+import { track, getTraffic, getSummary, getDevices } from "../controllers/AnalyticsController.js";
 
 const router = Router();
 

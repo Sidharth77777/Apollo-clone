@@ -1,10 +1,10 @@
 import { type Request, type Response } from "express";
 import mongoose from "mongoose";
-import ListModel from "../models/ListModel.ts";
-import PersonModel from "../models/PersonModel.ts";
-import UserModel from "../models/UserModel.ts";
-import CompanyModel from "../models/CompanyModel.ts";
-import { addCredits, deductCredits } from "../lib/credits.ts";
+import ListModel from "../models/ListModel.js";
+import PersonModel from "../models/PersonModel.js";
+import UserModel from "../models/UserModel.js";
+import CompanyModel from "../models/CompanyModel.js";
+import { addCredits, deductCredits } from "../lib/credits.js";
 
 
 const CREATE_LIST_COST = 10;

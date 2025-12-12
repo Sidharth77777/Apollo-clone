@@ -1,5 +1,5 @@
 import { Router } from "express";
-import * as CompanyCtrl from "../controllers/CompanyController.ts";
+import * as CompanyCtrl from "../controllers/CompanyController.js";
 
 const router = Router();
 

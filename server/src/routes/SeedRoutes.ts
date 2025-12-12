@@ -1,6 +1,6 @@
 // routes/seed.ts
 import { Router } from "express";
-import { deletePeopleHandler, seedHandler } from "../controllers/SeedController.ts";
+import { deletePeopleHandler, seedHandler } from "../controllers/SeedController.js";
 
 const router = Router();
 

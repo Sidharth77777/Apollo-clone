@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 import mongoose from "mongoose";
-import CompanyModel from "../models/CompanyModel.ts";
+import CompanyModel from "../models/CompanyModel.js";
 
 /** Helper: only admin can modify companies */
 const requireAdmin = (req: Request, res: Response) => {

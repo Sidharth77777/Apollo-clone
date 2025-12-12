@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createCheckoutSession, getCheckoutSession, listStripeTransactions, listTransactions } from "../controllers/PaymentController.ts";
+import { createCheckoutSession, getCheckoutSession, listStripeTransactions, listTransactions } from "../controllers/PaymentController.js";
 
 const router = Router();
 

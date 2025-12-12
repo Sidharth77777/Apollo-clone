@@ -1,6 +1,5 @@
 import type { Request, Response } from "express";
-import AnalyticsHitModel from "../models/AnalyticsHitModel.ts";
-import mongoose from "mongoose";
+import AnalyticsHitModel from "../models/AnalyticsHitModel.js";
 
 /** small UA sniff */
 const detectDeviceType = (ua?: string) => {

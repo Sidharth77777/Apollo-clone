@@ -3,10 +3,10 @@
 // Usage: npx tsx test-webhook.ts YOUR_USER_ID
 
 import mongoose from "mongoose";
-import { ENV } from "./lib/ENV.ts";
-import UserModel from "./models/UserModel.ts";
-import CreditTxnModel from "./models/CreditTxnModel.ts";
-import { addCredits } from "./lib/credits.ts";
+import { ENV } from "./lib/ENV.js";
+import UserModel from "./models/UserModel.js";
+import CreditTxnModel from "./models/CreditTxnModel.js";
+import { addCredits } from "./lib/credits.js";
 
 const simulateWebhook = async (userId: string) => {
   try {

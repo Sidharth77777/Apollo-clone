@@ -1,8 +1,8 @@
 // controllers/SeedController.ts
 import type { Request, Response } from "express";
-import CompanyModel from "../models/CompanyModel.ts";
-import PersonModel from "../models/PersonModel.ts";
-import { ENV } from "../lib/ENV.ts";
+import CompanyModel from "../models/CompanyModel.js";
+import PersonModel from "../models/PersonModel.js";
+import { ENV } from "../lib/ENV.js";
 import mongoose from "mongoose";
 
 type FrontCompany = any;

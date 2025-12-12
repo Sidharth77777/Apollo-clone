@@ -2,8 +2,8 @@ import { type Request, type Response } from "express";
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import UserModel from "../models/UserModel.ts";
-import { ENV } from "../lib/ENV.ts";
+import UserModel from "../models/UserModel.js";
+import { ENV } from "../lib/ENV.js";
 
 const COOKIE_NAME = "token";
 const cookieOptions = {

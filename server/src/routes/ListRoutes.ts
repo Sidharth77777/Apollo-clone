@@ -1,5 +1,5 @@
 import { Router } from "express";
-import * as ListCtrl from "../controllers/ListController.ts";
+import * as ListCtrl from "../controllers/ListController.js";
 
 const router = Router();
 

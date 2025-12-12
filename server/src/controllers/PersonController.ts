@@ -1,7 +1,7 @@
 import  { type Request, type Response } from "express";
 import mongoose from "mongoose";
-import PersonModel from "../models/PersonModel.ts";
-import CompanyModel from "../models/CompanyModel.ts";
+import PersonModel from "../models/PersonModel.js";
+import CompanyModel from "../models/CompanyModel.js";
 
 /**
  * Create person

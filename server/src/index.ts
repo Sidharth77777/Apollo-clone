@@ -1,19 +1,19 @@
 import express from "express";
 import type { Request, Response } from "express";
 import cors from "cors";
-import { ENV } from "./lib/ENV.ts";
-import { checkHealthOfServer } from "./controllers/healthOfServer.ts";
-import { connectDB } from "./config/db.ts";
+import { ENV } from "./lib/ENV.js";
+import { checkHealthOfServer } from "./controllers/healthOfServer.js";
+import { connectDB } from "./config/db.js";
 import cookieParser from "cookie-parser";
-import { authMiddleware } from "./middleware/authMiddleware.ts";
-import { stripeWebhookHandler } from "./controllers/PaymentController.ts";
-import paymentsRouter from "./routes/PaymentRouter.ts";
-import companiesRouter from "./routes/CompanyRoutes.ts";
-import peopleRouter from "./routes/PersonRoutes.ts";
-import seedRouter from "./routes/SeedRoutes.ts";
-import listRouter from "./routes/ListRoutes.ts";
-import userRouter from "./routes/UserRoutes.ts";
-import analyticsRouter from "./routes/AnalyticsRoutes.ts";
+import { authMiddleware } from "./middleware/authMiddleware.js";
+import { stripeWebhookHandler } from "./controllers/PaymentController.js";
+import paymentsRouter from "./routes/PaymentRouter.js";
+import companiesRouter from "./routes/CompanyRoutes.js";
+import peopleRouter from "./routes/PersonRoutes.js";
+import seedRouter from "./routes/SeedRoutes.js";
+import listRouter from "./routes/ListRoutes.js";
+import userRouter from "./routes/UserRoutes.js";
+import analyticsRouter from "./routes/AnalyticsRoutes.js";
 
 const app = express();
 
