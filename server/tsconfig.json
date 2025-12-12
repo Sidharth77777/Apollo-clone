@@ -7,7 +7,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "target": "es2020",
     "types": [],
     // For nodejs:
@@ -19,13 +20,15 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "esModuleInterop": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
+    // NEED TO CHANGE THESE ON PRODUCTION
     //"noEmit": true,
-    //"allowImportingTsExtensions": true,
+    //"allowImportingTsExtensions": false,
 
     // Style Options
     // "noImplicitReturns": true,
@@ -43,5 +46,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    "resolveJsonModule": true,
   }
 }
